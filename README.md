@@ -15,7 +15,12 @@ ElkEngine is a voxel engine that we made in order to create this game.
 - Documentation (Mainly in french)
 
 # Technical informations
-In order to have fun with our work, you need to be on Windows and have Visual Studio installed (We used the 2017 version).
+In order to have fun with our work, you need to have :
+- Windows
+- Visual Studio 2017
+- OpenGL 4.6 or higher
+- At least 500MB of RAM to play
+
 If you don't want to compile our project, you can launch the release in the "Bin/" folder.
 
 # How to compile ?
