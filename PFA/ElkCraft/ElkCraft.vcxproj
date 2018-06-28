@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3B1B1998-26B8-4964-8D9F-2673248D6CB1}</ProjectGuid>
+    <RootNamespace>ElkCraft</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Source/;$(SourcePath)</SourcePath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\lib\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Source/;$(SourcePath)</SourcePath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\lib\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Source/;$(SourcePath)</SourcePath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\lib\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Source/;$(SourcePath)</SourcePath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\lib\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\bin\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del "$(ProjectDir)*.dll"</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkGameEngine.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\bin\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del "$(ProjectDir)*.dll"</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkGameEngine.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkGameEngine.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\bin\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del "$(ProjectDir)*.dll"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkGameEngine.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\ElkEngine\Build\ElkGameEngine\bin\$(Platform)\$(Configuration)\*.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del "$(ProjectDir)*.dll"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Gameplay\Crafting.cpp" />
+    <ClCompile Include="Sources\Gameplay\HealthSystem.cpp" />
+    <ClCompile Include="Sources\Gameplay\HungerSystem.cpp" />
+    <ClCompile Include="Sources\Gameplay\ItemInteraction.cpp" />
+    <ClCompile Include="Sources\Terrain\FastNoise.cpp" />
+    <ClCompile Include="Sources\UI\HandAnimation.cpp" />
+    <ClCompile Include="Sources\Utils\ItemsInfo.cpp" />
+    <ClCompile Include="Sources\Physics\WorldCollision.cpp" />
+    <ClCompile Include="Sources\Gameplay\BlockInteraction.cpp" />
+    <ClCompile Include="Sources\System\Game.cpp" />
+    <ClCompile Include="Sources\System\GameStateManager.cpp" />
+    <ClCompile Include="Sources\System\GameStateMenu.cpp" />
+    <ClCompile Include="Sources\System\GameStatePlay.cpp" />
+    <ClCompile Include="Sources\UI\Buttons.cpp" />
+    <ClCompile Include="Sources\Gameplay\Inventory.cpp" />
+    <ClCompile Include="Sources\main.cpp" />
+    <ClCompile Include="Sources\Terrain\Perlin.cpp" />
+    <ClCompile Include="Sources\Gameplay\PlayerController.cpp" />
+    <ClCompile Include="Sources\System\SaveManager.cpp" />
+    <ClCompile Include="Sources\Terrain\World.cpp" />
+    <ClCompile Include="Sources\Utils\Recipe.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ElkCraft\Gameplay\BlockInteraction.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\Crafting.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\HealthSystem.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\HungerSystem.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\ItemInteraction.h" />
+    <ClInclude Include="Include\ElkCraft\Physics\WorldCollision.h" />
+    <ClInclude Include="Include\ElkCraft\System\Game.h" />
+    <ClInclude Include="Include\ElkCraft\System\GameStateManager.h" />
+    <ClInclude Include="Include\ElkCraft\System\GameStateMenu.h" />
+    <ClInclude Include="Include\ElkCraft\System\GameStatePlay.h" />
+    <ClInclude Include="Include\ElkCraft\System\IGameState.h" />
+    <ClInclude Include="Include\ElkCraft\Terrain\FastNoise.h" />
+    <ClInclude Include="Include\ElkCraft\Terrain\WorldProperties.h" />
+    <ClInclude Include="Include\ElkCraft\UI\Buttons.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\Inventory.h" />
+    <ClInclude Include="Include\ElkCraft\Terrain\Perlin.h" />
+    <ClInclude Include="Include\ElkCraft\Gameplay\PlayerController.h" />
+    <ClInclude Include="Include\ElkCraft\System\SaveManager.h" />
+    <ClInclude Include="Include\ElkCraft\Terrain\World.h" />
+    <ClInclude Include="Include\ElkCraft\UI\HandAnimation.h" />
+    <ClInclude Include="Include\ElkCraft\Utils\ItemsInfo.h" />
+    <ClInclude Include="Include\ElkCraft\Utils\Recipe.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ElkCraft.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ElkCraft.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EE7C01E3-55B9-44A9-ADA2-75A598990239}</ProjectGuid>
+    <RootNamespace>ElkGameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(SolutionDir)ElkAPI\include;$(SolutionDir)Build\ElkRendering\include;$(SolutionDir)Build\ElkPhysics\include;$(SolutionDir)Build\ElkTools\include;$(SolutionDir)Dependencies\glfw-3.2.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(SolutionDir)ElkAPI\include;$(SolutionDir)Build\ElkRendering\include;$(SolutionDir)Build\ElkPhysics\include;$(SolutionDir)Build\ElkTools\include;$(SolutionDir)Dependencies\glfw-3.2.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(SolutionDir)ElkAPI\include;$(SolutionDir)Build\ElkRendering\include;$(SolutionDir)Build\ElkPhysics\include;$(SolutionDir)Build\ElkTools\include;$(SolutionDir)Dependencies\glfw-3.2.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)include;$(SolutionDir)ElkAPI\include;$(SolutionDir)Build\ElkRendering\include;$(SolutionDir)Build\ElkPhysics\include;$(SolutionDir)Build\ElkTools\include;$(SolutionDir)Dependencies\glfw-3.2.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration);$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>ELK_GAMEENGINE_EXPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>:: Delete the previous build ::
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\include"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+:: Copy his includes into the build folder ::
+xcopy "$(ProjectDir)include" "$(SolutionDir)Build\$(ProjectName)\include" /e /y /i /r
+xcopy "$(OutDir)*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(OutDir)*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkAPI ::
+xcopy "$(SolutionDir)ElkAPI\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+
+:: Copy ElkTools ::
+xcopy "$(SolutionDir)Build\ElkTools\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkTools\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkRendering ::
+xcopy "$(SolutionDir)Build\ElkRendering\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkRendering\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkPhysics ::
+xcopy "$(SolutionDir)Build\ElkPhysics\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkPhysics\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy GLFW ::
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\include\*" "$(SolutionDir)Build\$(ProjectName)\include\"  /e /y /i /r
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\bin\$(Platform)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>ELK_GAMEENGINE_EXPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>:: Delete the previous build ::
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\include"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+:: Copy his includes into the build folder ::
+xcopy "$(ProjectDir)include" "$(SolutionDir)Build\$(ProjectName)\include" /e /y /i /r
+xcopy "$(OutDir)*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(OutDir)*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkAPI ::
+xcopy "$(SolutionDir)ElkAPI\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+
+:: Copy ElkTools ::
+xcopy "$(SolutionDir)Build\ElkTools\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkTools\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkRendering ::
+xcopy "$(SolutionDir)Build\ElkRendering\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkRendering\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkPhysics ::
+xcopy "$(SolutionDir)Build\ElkPhysics\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkPhysics\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy GLFW ::
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\include\*" "$(SolutionDir)Build\$(ProjectName)\include\"  /e /y /i /r
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\bin\$(Platform)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>ELK_GAMEENGINE_EXPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>:: Delete the previous build ::
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\include"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+:: Copy his includes into the build folder ::
+xcopy "$(ProjectDir)include" "$(SolutionDir)Build\$(ProjectName)\include" /e /y /i /r
+xcopy "$(OutDir)*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(OutDir)*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkAPI ::
+xcopy "$(SolutionDir)ElkAPI\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+
+:: Copy ElkTools ::
+xcopy "$(SolutionDir)Build\ElkTools\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkTools\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkRendering ::
+xcopy "$(SolutionDir)Build\ElkRendering\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkRendering\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkPhysics ::
+xcopy "$(SolutionDir)Build\ElkPhysics\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkPhysics\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy GLFW ::
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\include\*" "$(SolutionDir)Build\$(ProjectName)\include\"  /e /y /i /r
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\bin\$(Platform)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>ELK_GAMEENGINE_EXPORT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib;ElkPhysics.lib;ElkRendering.lib;ElkTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>:: Delete the previous build ::
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\include"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+RD /S /Q "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+:: Copy his includes into the build folder ::
+xcopy "$(ProjectDir)include" "$(SolutionDir)Build\$(ProjectName)\include" /e /y /i /r
+xcopy "$(OutDir)*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(OutDir)*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkAPI ::
+xcopy "$(SolutionDir)ElkAPI\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+
+:: Copy ElkTools ::
+xcopy "$(SolutionDir)Build\ElkTools\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkTools\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkTools\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkRendering ::
+xcopy "$(SolutionDir)Build\ElkRendering\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkRendering\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkRendering\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy ElkPhysics ::
+xcopy "$(SolutionDir)Build\ElkPhysics\include\*" "$(SolutionDir)Build\$(ProjectName)\include\" /e /y /i /r
+xcopy "$(SolutionDir)Build\ElkPhysics\bin\$(Platform)\$(Configuration)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Build\ElkPhysics\lib\$(Platform)\$(Configuration)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+
+:: Copy GLFW ::
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\include\*" "$(SolutionDir)Build\$(ProjectName)\include\"  /e /y /i /r
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\lib\$(Platform)\*.lib" "$(SolutionDir)Build\$(ProjectName)\lib\$(Platform)\$(Configuration)" /y /i
+xcopy "$(SolutionDir)Dependencies\glfw-3.2.1\bin\$(Platform)\*.dll" "$(SolutionDir)Build\$(ProjectName)\bin\$(Platform)\$(Configuration)" /y /i</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Context\Device.h" />
+    <ClInclude Include="include\CoreDebug\Assertion.h" />
+    <ClInclude Include="include\CoreDebug\Log.h" />
+    <ClInclude Include="include\ElkGameEngine\Context\Device.h" />
+    <ClInclude Include="include\ElkGameEngine\ElkGameEngine.h" />
+    <ClInclude Include="include\ElkGameEngine\export.h" />
+    <ClInclude Include="include\ElkGameEngine\Managers\EngineManager.h" />
+    <ClInclude Include="include\ElkGameEngine\Managers\InputManager.h" />
+    <ClInclude Include="include\ElkGameEngine\Managers\SceneManager.h" />
+    <ClInclude Include="include\ElkGameEngine\Managers\WindowManager.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\AObject.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\AComponent.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\ABehaviour.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\AButton.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\AudioListener.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\Camera.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\Chunk.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\Rigidbody.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\Sprite.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\Text.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Behaviours\UICamera.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Components\Transform.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\GameObject.h" />
+    <ClInclude Include="include\ElkGameEngine\Objects\Scene.h" />
+    <ClInclude Include="include\export.h" />
+    <ClInclude Include="include\Objects\AObject.h" />
+    <ClInclude Include="include\Objects\Components\AComponent.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\ABehaviour.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\ACustomComponent.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Camera.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Light.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\ModelRenderer.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Physics\ACollider.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Physics\BoxCollider.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Physics\SphereCollider.h" />
+    <ClInclude Include="include\Objects\Components\Behaviours\Physics\Rigidbody.h" />
+    <ClInclude Include="include\Objects\Components\Transform.h" />
+    <ClInclude Include="include\Objects\GameObject.h" />
+    <ClInclude Include="include\Objects\Scene.h" />
+    <ClInclude Include="include\Managers\EngineManager.h" />
+    <ClInclude Include="include\Managers\InputManager.h" />
+    <ClInclude Include="include\Managers\SceneManager.h" />
+    <ClInclude Include="include\Managers\WindowManager.h" />
+    <ClInclude Include="include\Utils\ConfigLoader.h" />
+    <ClInclude Include="include\Utils\Date.h" />
+    <ClInclude Include="include\Utils\SharedContext.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Objects\Components\Behaviours\AButton.cpp" />
+    <ClCompile Include="src\Context\Device.cpp" />
+    <ClCompile Include="src\Objects\AObject.cpp" />
+    <ClCompile Include="src\Objects\Components\AComponent.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\ABehaviour.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\AudioListener.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\Camera.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\Chunk.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\Rigidbody.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\Sprite.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\Text.cpp" />
+    <ClCompile Include="src\Objects\Components\Behaviours\UICamera.cpp" />
+    <ClCompile Include="src\Objects\Components\Transform.cpp" />
+    <ClCompile Include="src\Objects\GameObject.cpp" />
+    <ClCompile Include="src\Objects\Scene.cpp" />
+    <ClCompile Include="src\Managers\EngineManager.cpp" />
+    <ClCompile Include="src\Managers\InputManager.cpp" />
+    <ClCompile Include="src\Managers\SceneManager.cpp" />
+    <ClCompile Include="src\Managers\WindowManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ElkPhysics\ElkPhysics.vcxproj">
+      <Project>{e6430fa9-7ebf-438f-ab4f-045d2b165326}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ElkRendering\ElkRendering.vcxproj">
+      <Project>{e4e1df20-ccb0-4e6b-96f2-464ea057d9e8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

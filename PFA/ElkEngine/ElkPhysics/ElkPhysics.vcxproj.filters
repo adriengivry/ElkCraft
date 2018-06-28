@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{b333ff94-63d8-4e55-a18c-6c9d49956ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{266e8b95-bd79-4c6e-b203-68fa23a1eb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Colliders">
+      <UniqueIdentifier>{5dfa07d6-8424-49de-a7ba-1969517064c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Physics">
+      <UniqueIdentifier>{5c7c40a7-a018-4064-aa5e-fafaa3d4d7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{08cfc2a4-509a-422d-8f8a-c5347c335dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Colliders">
+      <UniqueIdentifier>{8ee855e1-4d59-45d6-b6cb-ecc11bc45a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Physics">
+      <UniqueIdentifier>{f3ba3e75-6bb2-497c-9d49-8195334a2519}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Math.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Colliders\CollisionData.h">
+      <Filter>Header Files\Data\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Colliders\AColliderData.h">
+      <Filter>Header Files\Data\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Colliders\BoxColliderData.h">
+      <Filter>Header Files\Data\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Colliders\SphereColliderData.h">
+      <Filter>Header Files\Data\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\exportPhysics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Colliders\CollisionDetection.h">
+      <Filter>Header Files\Data\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Physics\RigidbodyData.h">
+      <Filter>Header Files\Data\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\PhysicsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Physics\TransformData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Data\Entity\PhysicsEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Data\Physics\RigidbodyData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Data\Physics\TransformData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Managers\PhysicsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Math\Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Data\Physics\PhysicsEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ElkPhysics\Data\CollisionTable.h">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Managers\PhysicsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Data\Physics\PhysicsEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
