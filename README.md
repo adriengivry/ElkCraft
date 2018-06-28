@@ -1,7 +1,7 @@
 ![alt text](header.jpg?raw=true "Class Diagram")
 
 # What is ElkCraft ?
-Here is ElkCraft, a Minecraft clone made in C++/OpenGL in 5 weeks in a group of 4 people.
+Here is ElkCraft, a Minecraft clone made with C++/OpenGL during 5 weeks in a group of 4 programmers.
 The actual version allows you to play in an infinite world, generated at runtime, where you can build, destroy and mining or crafting things.
 We implemented an health system and an hunger system. There is also a day and night cycle.
 Monsters aren't implemented.
