@@ -40,3 +40,8 @@ In order to compile this project you need to follows these steps :
 # ElkCraft class diagram
 ![alt text](Doc/ElkCraft.jpg?raw=true "Class Diagram")
 
+# Credits
+Adrien GIVRY
+Charly JEAUC
+Saad RAOUF
+Hanseul SHIN
