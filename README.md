@@ -34,6 +34,9 @@ In order to compile this project you need to follows these steps :
 # Recommandation
 - You can build the project for every configuration (x64/x86 | Debug/Release)
 
+# Download latest build
+If you want to play this game without compiling it, click here: [Download](http://adrien-givry.com/download/elkcraft.zip)
+
 # ElkEngine package diagram
 ![alt text](Doc/ElkEngine.jpg?raw=true "Class Diagram")
 
